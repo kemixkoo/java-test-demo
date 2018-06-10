@@ -1,0 +1,43 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+#*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs
+hs_err_pid*
+
+#classes folder
+bin/
+target/
+classes/
+class/
+
+#Mac file
+.DS_Store
+.recommenders
+
+#Netbeans
+nbactions.xml
+nb-configuration.xml
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*~
+
+# Eclipse
+#.project
+#.settings
+#.classpath
+.metadata
