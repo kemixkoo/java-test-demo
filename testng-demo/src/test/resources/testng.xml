@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="My test">
+	<parameter name="name" value="cat" />
+	<test name="world">
+		<groups>
+			<run>
+				<include name="world" />
+				<include name="dog" />
+			</run>
+		</groups>
+		<classes>
+			<class name="xyz.kemix.java.test.testng.TestWorld">
+				<methods>
+					<exclude name="sayHelloDogs" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="param">
+		<groups>
+			<run>
+				<include name="param" />
+			</run>
+		</groups>
+		<classes>
+			<class name="xyz.kemix.java.test.testng.TestWorld" />
+		</classes>
+	</test>
+</suite>
