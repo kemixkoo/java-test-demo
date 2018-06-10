@@ -12,13 +12,19 @@
 		<module>basic-class</module>
 		<module>junit3-demo</module>
 		<module>junit4-demo</module>
+		<module>junit5-demo</module>
 	</modules>
 
 	<properties>
 		<encoding>UTF-8</encoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+		<project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
+		<maven.compiler.encoding>${encoding}</maven.compiler.encoding>
+
+		<compiler.version>1.8</compiler.version>
+		<maven.compiler.source>${compiler.version}</maven.compiler.source>
+		<maven.compiler.target>${compiler.version}</maven.compiler.target>
+		<maven.compiler.compilerVersion>${compiler.version}</maven.compiler.compilerVersion>
 
 		<junit.version>4.12</junit.version>
 	</properties>
