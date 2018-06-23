@@ -10,13 +10,13 @@ https://junit.org/junit4/
 
 ## Life Cycle
 
-![JUnit4 Life Cycle](/junit4-lifecycle.png)
+![JUnit4 Life Cycle](junit4-lifecycle.png)
 
 
 ## Run test
 
 Right click on project with menu "Run As -> JUnit Test"
 
-![JUnit4 Run](/junit4-runtest.png)
+![JUnit4 Run](junit4-runtest.png)
 
 NOTE: Because test on project, the results are mixed. 

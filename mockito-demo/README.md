@@ -20,4 +20,4 @@ http://site.mockito.org/
 
 Right click on project with menu "Run As -> JUnit Test"
 
-![Mockito Run](/mockito-runtest.png)
+![Mockito Run](mockito-runtest.png)

@@ -32,10 +32,10 @@ org.junit.Assume  |  org.junit.jupiter.api.Assumptions
 
 Almost same as JUnit4, just some names are different with JUnit4.
 
-![JUnit5 Life Cycle](/junit5-lifecycle.png)
+![JUnit5 Life Cycle](junit5-lifecycle.png)
 
 ## Run test
 
 Right click on project with menu "Run As -> JUnit Test"
 
-![JUnit5 Run](/junit5-runtest.png)
+![JUnit5 Run](junit5-runtest.png)

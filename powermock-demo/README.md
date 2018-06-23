@@ -26,4 +26,4 @@ Must use old version like 2.8.47 instead.
 
 Right click on project with menu "Run As -> JUnit Test"
 
-![PowerMock Run](/powermock-runtest.png)
+![PowerMock Run](powermock-runtest.png)

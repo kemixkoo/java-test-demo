@@ -18,7 +18,7 @@ org.junit.Assert |   org.testng.Assert
 
 ## Life Cycle
 
-![TestNG Life Cycle](/testng-lifecycle.png)
+![TestNG Life Cycle](testng-lifecycle.png)
 
 ## Run test
 
@@ -26,4 +26,4 @@ Like in Eclipse IDE, if don't install the TestNG plugins, need install from Ecli
 
 Then, right click on testng.xml with menu "Run As -> TestNG Suite"
 
-![TestNG Run](/testng-runtest.png)
+![TestNG Run](testng-runtest.png)
