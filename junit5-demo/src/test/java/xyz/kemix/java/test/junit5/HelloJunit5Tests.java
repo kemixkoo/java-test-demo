@@ -20,14 +20,20 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import xyz.kemix.java.test.basic.Hello;
 
+/**
+ * 
+ * @author Kemix Koo
+ *
+ */
 @DisplayName("Test JUnit5 for horses")
 public class HelloJunit5Tests {
-    @DisabledOnOs(LINUX)
-    @RepeatedTest(value = 5, name = "第{currentRepetition}轮{displayName}测试")
+
+    @DisabledOnOs(LINUX) // no test in linux
+    @RepeatedTest(value = 5, name = "第{currentRepetition}轮{displayName}测试") // use the inner vars
     @DisplayName("♞♘")
     public void helloHorse(RepetitionInfo repetitionInfo) {
-        assertEquals(5, repetitionInfo.getTotalRepetitions()); 
-        
+        assertEquals(5, repetitionInfo.getTotalRepetitions()); // verify the repeated times
+
         final Hello hello = new Hello();
         assertTimeout(ofMillis(1000), () -> { // test in 1s
             assertAll("horses", () -> {
@@ -48,8 +54,11 @@ public class HelloJunit5Tests {
         });
     }
 
-    @ParameterizedTest(name = "第{index}次我想要{0}马")
-    @ValueSource(strings = { "赤兔", "的卢", "白龙" })
+    /**
+     * do parameters test
+     */
+    @ParameterizedTest(name = "第{index}次我想要{0}马") // use inner var with arg value
+    @ValueSource(strings = { "赤兔", "的卢", "白龙" }) // values of args
     @DisplayName("宝马测试")
     public void helloBestHorse(String name) {
         final Hello hello = new Hello();

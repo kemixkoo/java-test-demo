@@ -5,9 +5,14 @@ import org.junit.experimental.categories.Categories.IncludeCategory;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite.SuiteClasses;
 
-@RunWith(Categories.class)
-@IncludeCategory(WorldTests.class)
-@SuiteClasses({ HelloJunit4Test.class })
-public class HelloWorldTestsCategory {
+/**
+ * 
+ * @author Kemix Koo
+ *
+ */
+@RunWith(Categories.class) //runner
+@IncludeCategory(FlagAnimalTests.class) //flag interface
+@SuiteClasses({ HelloJunit4Test.class }) //test classes
+public class HelloAnimalCategoryTests {
     // nothing
 }

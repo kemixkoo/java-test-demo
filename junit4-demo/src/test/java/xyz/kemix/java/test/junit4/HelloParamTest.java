@@ -12,28 +12,42 @@ import org.junit.runners.Parameterized.Parameters;
 
 import xyz.kemix.java.test.basic.Hello;
 
-@RunWith(Parameterized.class)
+/**
+ * Do test with parameters.
+ * 
+ * @author Kemix Koo
+ *
+ */
+@RunWith(Parameterized.class) // Parameterized runner
 public class HelloParamTest {
     private String expected;
     private String name;
 
+    /**
+     * 
+     * @param expected,
+     *            value of test
+     * @param name,
+     *            value of arg
+     */
     public HelloParamTest(String expected, String name) {
         super();
         this.expected = expected;
         this.name = name;
     }
 
+    /**
+     * If want to test several values with same case, set values in arrays.
+     */
     @Parameters
     public static Collection addedNumbers() {
-        return Arrays.asList(new String[][] {
-            { "Hello world", "world" }, 
-            { "Hello cat", "cat" }, 
-            { "Hello dog", "dog" } });
+        return Arrays.asList(new String[][] { { "Hello world", "world" }, { "Hello cat", "cat" }, { "Hello dog", "dog" } });
     }
 
     @Test
     public void testSayHello() {
-        Hello hello=new Hello();
+        Hello hello = new Hello();
+        //use the args to do test
         assertEquals(expected, hello.sayHello(name));
     }
 }

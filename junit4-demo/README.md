@@ -1,31 +1,22 @@
-## General Test
+# JUnit 4
 
-HelloJunit4Test
+Started at 2005, support JDK5 for Annotations.
 
-* testSayHello
-* sayHelloCat
-* testHelloDog
+The version of jar is fixed in 4.12, and the latest update is at Feb, 2014.
 
-## Suite Test
+Maven: `junit:junit:4.12`
 
-HelloTestsSuite
+https://junit.org/junit4/
 
-`@RunWith(Suite.class)`
+## Life Cycle
+
+![JUnit4 Life Cycle](/junit4-lifecycle.png)
 
 
-## Category Test
+## Run test
 
-HelloWorldTestsCategory (with interface WorldTests)
+Right click on project with menu "Run As -> JUnit Test"
 
-HelloAnimalTestsCategory (with interface AnimalTests)
+![JUnit4 Run](/junit4-runtest.png)
 
-`@RunWith(Categories.class)`
-
-## Parameter Test
-
-HelloParamTest
-
-* testSayHello
-
-`@RunWith(Parameterized.class)`
-
+NOTE: Because test on project, the results are mixed. 
