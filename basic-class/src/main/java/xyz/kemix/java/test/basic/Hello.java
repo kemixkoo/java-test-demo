@@ -15,4 +15,8 @@ public class Hello {
         return "Hi " + name;
     }
 
+    public String helloUser() {
+        return "Hi " + DelegateUtil.getUser();
+    }
+
 }
