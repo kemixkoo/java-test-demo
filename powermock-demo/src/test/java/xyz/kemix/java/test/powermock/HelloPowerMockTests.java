@@ -58,9 +58,9 @@ public class HelloPowerMockTests {
         // do mock way
         mockStatic(DelegateUtil.class);// must mock the static class first.
 
-        when(DelegateUtil.getUser()).thenReturn("Baishan"); // mock the method of static classes
+        when(DelegateUtil.getUser()).thenReturn("World"); // mock the method of static classes
 
-        assertThat(hello.helloUser(), is("Hi Baishan")); // mocked value
+        assertThat(hello.helloUser(), is("Hi World")); // mocked value
 
         verifyStatic(DelegateUtil.class, atLeastOnce()); // verify the times to call
     }
