@@ -40,7 +40,7 @@ public class HelloParamTest {
      * If want to test several values with same case, set values in arrays.
      */
     @Parameters
-    public static Collection addedNumbers() {
+    public static Collection setup() {
         return Arrays.asList(new String[][] { { "Hello world", "world" }, { "Hello cat", "cat" }, { "Hello dog", "dog" } });
     }
 
